@@ -57,4 +57,4 @@ stash存储的内容，就是当前工作区距当前分支最后一次提交时
  3. `checkout`置`dev`分支，使用`git stash pop`恢复之前未提交的修改内容
 
  
-鸣谢：[Git-命令行-使用 git stash 让突如其来的分支切换更加美好～](https://blog.csdn.net/qq_32452623/article/details/76100140)
+参考：[Git-命令行-使用 git stash 让突如其来的分支切换更加美好～](https://blog.csdn.net/qq_32452623/article/details/76100140)
