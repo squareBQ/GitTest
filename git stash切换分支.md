@@ -1,7 +1,5 @@
 # 使用Git stash切换分支
 
-[摘自此处](https://blog.csdn.net/qq_32452623/article/details/76100140)
-
 ### 场景描述：
 
 ```
@@ -34,9 +32,29 @@
 
 ![](screenshot/git_stash_03.png)
 
+#### 细节
+stash存储的内容，就是当前工作区距当前分支最后一次提交时的修改。
+
+ * __存储多个stash__
+ 
+   直接使用`git stash`存储，然后使用`git stash list`查看暂存区所有的暂存修改记录
+ * __stash存储名称__
+ 	
+ 	当使用`git stash`创建stash的时候，会给stash一个默认的名称，命名规则如下：
+ 	`WIP on <branch_name> ： <latest_commit_id> <latest_commit_message>`
+ 	
+ 	当然还可以使用`git stash save <message>`给stash存储的修改起个名字
+ * __取出方式__
+ 
+ 	1. `git stash pop`弹出栈顶的一个stash，也就是最后一次暂存并删除记录列表中对应记录。显然，对于多个stash不适用。
+ 	2. `git stash apply stash@{stash_name}`取出相应的暂存
+ 	3. `git stash drop stash@{stash_name}`将记录列表中取出的对应暂存记录删除
+
+
 #### 操作步骤
  1. `dev`分支使用`git stash`暂存当前更改到缓存区（此时dev分支代码为修改之前最后一次提交代码位置）
  2. `checkout`置`master`分支，修改线上bug
  3. `checkout`置`dev`分支，使用`git stash pop`恢复之前未提交的修改内容
 
  
+鸣谢：[Git-命令行-使用 git stash 让突如其来的分支切换更加美好～](https://blog.csdn.net/qq_32452623/article/details/76100140)
