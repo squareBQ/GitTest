@@ -41,6 +41,7 @@ stash存储的内容，就是当前工作区距当前分支最后一次提交时
  * __stash存储名称__
  	
  	当使用`git stash`创建stash的时候，会给stash一个默认的名称，命名规则如下：
+ 	
  	`WIP on <branch_name> ： <latest_commit_id> <latest_commit_message>`
  	
  	当然还可以使用`git stash save <message>`给stash存储的修改起个名字
