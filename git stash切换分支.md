@@ -47,10 +47,14 @@ stash存储的内容，就是当前工作区距当前分支最后一次提交时
  	当然还可以使用`git stash save <message>`给stash存储的修改起个名字
  * __取出方式__
  
- 	1. `git stash pop`弹出栈顶的一个stash，也就是最后一次暂存并删除记录列表中对应记录。显然，对于多个stash不适用。
+ 	1. `git stash pop`弹出栈顶的一个stash
+ 	4. `git stash pop stash@{num}` num是你要恢复的操作的序号
  	2. `git stash apply stash@{stash_name}`取出相应的暂存
  	3. `git stash drop stash@{stash_name}`将记录列表中取出的对应暂存记录删除
-
+ 
+ * __删除__
+ 
+    `git stash clear` 清空暂存记录。
 
 #### 操作步骤
  1. `dev`分支使用`git stash`暂存当前更改到缓存区（此时dev分支代码为修改之前最后一次提交代码位置）
