@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -16,9 +17,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:onClick="doPost"
+        android:id="@+id/btn_01"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:onClick="doPost"
         android:text="发送消息" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="doChange"
+        android:text="修改"
+        app:layout_constraintLeft_toRightOf="@id/btn_01" />
 
 </android.support.constraint.ConstraintLayout>
