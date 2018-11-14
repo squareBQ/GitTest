@@ -13,8 +13,8 @@ git remote add {仓库名} {仓库地址}
 ```
 agent_origin    http://git.devops.net/test.git (fetch)
 agent_origin    http://git.devops.net/test.git (push)
-origin  http://202.95.237.37:8088/Android/meng.git (fetch)
-origin  http://202.95.237.37:8088/Android/meng.git (push)
+origin  http://xxx.xx.xx.xx:8010/Android/test.git (fetch)
+origin  http://xxx.xx.xx.xx:8010/Android/test.git (push)
 ```
 
 ### 2.修改config文件添加
