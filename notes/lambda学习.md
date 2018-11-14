@@ -1,8 +1,8 @@
-#Lambda使用
+# Lambda使用
 
-###语法
+### 语法
 
-####基本使用
+#### 基本使用
 
 ```
 (parameters) -> { expression or statements }
@@ -31,7 +31,7 @@ x -> 2 * x
 s -> System.out.print(s);
 ```
 
-####Java中使用Lambda
+#### Java中使用Lambda
 
 使用匿名内部类的写法
 
@@ -62,7 +62,7 @@ new Thread(() -> System.out.print("Hello World!")).start();
 > 1. 函数(可以是构造函数)的参数是接口
 > 2. 这个接口只包含一个抽象方法
 
-####自定义接口使用Lambda
+#### 自定义接口使用Lambda
 
  * 1.创建一个Person类
 
@@ -134,7 +134,7 @@ public class LambdaDemo {
 }
 ```
 
-###如何使Android Studio支持Lambda
+### 如何使Android Studio支持Lambda
 
 在Android N出现之前，大家都是使用`gradle-retrolambda`插件支持的。
 
@@ -184,7 +184,7 @@ findViewById(R.id.bt).setOnClickListener(view -> {
 });
 ```
 
-####Lambda和匿名内部类的区别
+#### Lambda和匿名内部类的区别
 
 看起来Lambda表达式只是简化了匿名内部类的书写，事实上Lambda并非匿名内部类的<font color="#0000ff">语法糖</font>，Lambda的效率比匿名内部类要高。
 
