@@ -4,7 +4,7 @@
 ```
 git remote add {仓库名} {仓库地址}
 
-例如：git remote add agent_origin http://git.xxxxxx.net/****.git
+例如：git remote add develop http://git.xxxxxx.net/****.git
 ```
 完成之后可使用`git remote -v`查看远程仓库关联情况
 
@@ -35,7 +35,7 @@ origin  http://xxx.xx.xx.xx:8010/Android/test.git (push)
 
 ### 3.操作
 
-####3.1 Pull操作
+#### 3.1 Pull操作
 使用以下命令，可以分别从两个远程仓库pull：
 
 ```
