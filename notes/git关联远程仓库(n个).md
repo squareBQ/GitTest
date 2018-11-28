@@ -51,4 +51,12 @@ git push origin master
 git push agent master
 ```
 
+#### 3.3 fetch操作
+使用fetch操作，获取远程仓库的相关信息：  
+（主要用于添加新的远程仓库之后，获取远程仓库信息到本地）
+
+```
+git fetch agent
+```
+
 ![git常用命令速查表](https://7n.w3cschool.cn/attachments/image/20170206/1486348362884912.jpg)
