@@ -1,7 +1,7 @@
 ![MacDown logo](http://goo.gl/5HBRdm)
 # Hello, I'm MacDown
 
-#####I think we are going to be friends.
+##### I think we are going to be friends.
 
 ## 基本语法
 
