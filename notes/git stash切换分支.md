@@ -21,16 +21,16 @@
 当前工程有`master`和`dev`两个分支。
 
 `master`分支代码：
-![图片描述](screenshot/git_stash_01.png)
+![图片描述](../imgs/git_stash_01.png)
 
 `dev`分支代码：
-![图片描述](screenshot/git_stash_02.png)
+![图片描述](../imgs/git_stash_02.png)
 
 现需要`checkout`到`master`分支，做bug修复。在`dev`分支使用`git stash`将现有分支更改暂存到缓存区，而不用做`commit`操作，然后切换`master`分支。
 
 > 注：IntelliJ IDEA的编辑器有Git图形化操作界面，可以直接直接操作处理。如下图
 
-![](screenshot/git_stash_03.png)
+![](../imgs/git_stash_03.png)
 
 #### 细节
 stash存储的内容，就是当前工作区距当前分支最后一次提交时的修改。
