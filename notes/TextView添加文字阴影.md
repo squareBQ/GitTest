@@ -25,4 +25,4 @@
 
 实际效果：
 
-![图片描述](imgs/text_shadow.png)
+![图片描述](../imgs/text_shadow.png)
