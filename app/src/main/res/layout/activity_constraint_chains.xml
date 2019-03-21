@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        app:layout_constraintHorizontal_chainStyle="" {spread , spread_inside}
+    chains，即为链条：
+    从头到尾设置，第一个控件start，end ===> start, end ====> 最后一个 start，end
+    从哪开始，从哪结尾都要说明，否则‘layout_constraintHorizontal_weight’不会生效
+    -->
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_str_01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_str_02"
+        app:layout_constraintStart_toEndOf="@id/btn1"
+        app:layout_constraintEnd_toStartOf="@id/btn3"
+        app:layout_constraintHorizontal_weight="2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_str_03"
+        app:layout_constraintStart_toEndOf="@id/btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="3"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

@@ -3,21 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="40dp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
     <Button
-        android:id="@+id/bnt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="按钮1"
+        android:text="@string/btn_str_01"
+        app:layout_constraintEnd_toStartOf="@id/gl_center"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="按钮2"
-        app:layout_constraintLeft_toRightOf="@id/bnt1"
+        android:text="@string/btn_str_02"
+        app:layout_constraintLeft_toRightOf="@id/gl_center"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

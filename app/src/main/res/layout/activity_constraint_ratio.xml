@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/bnt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="按钮1"
-        tools:ignore="MissingConstraints" />
+    <!-- 设置宽高比
+        app:layout_constraintDimensionRatio="5:1"
+    需要将至少一个纬度设置为‘MATCH_CONSTRAINT(0dp)’
+    -->
 
     <Button
-        android:id="@+id/btn2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="按钮2"
-        app:layout_constraintLeft_toRightOf="@id/bnt1"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_str_02"
+        app:layout_constraintDimensionRatio="W, 5:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

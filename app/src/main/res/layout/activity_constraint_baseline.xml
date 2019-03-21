@@ -5,19 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/bnt1"
+    <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:includeFontPadding="false"
         android:text="按钮1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn2"
+    <TextView
+        android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:includeFontPadding="false"
         android:text="按钮2"
-        app:layout_constraintLeft_toRightOf="@id/bnt1"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv1"
+        app:layout_constraintLeft_toRightOf="@id/tv1"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    指定View的宽高
+        android:layout_width=""
+        android:layout_height=""
+    :使用长度
+    :使用‘wrap_content’，view计算自己的大小
+    :使用‘0dp’，相当于‘match_constraint’(需要配合相对于parent位置共同使用，否则失效，如下Btn2)
+    -->
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="@string/btn_str_01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <!--此android:layout_width="0dp"，相当于‘wrap_content’-->
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_str_02"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

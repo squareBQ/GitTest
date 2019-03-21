@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bnt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_str_01"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bnt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_str_02"
+        android:textSize="14sp"
+        app:layout_constraintCircle="@id/bnt1"
+        app:layout_constraintCircleAngle="30"
+        app:layout_constraintCircleRadius="100dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 圆形定位 (可以以角度和距离约束某个View中心相对于另一个View的中心)
+        app:layout_constraintCircle="@id/bnt1" // 引用到另一个View ID
+        app:layout_constraintCircleRadius="100dp" // 到其他小部件中心的距离
+        app:layout_constraintCircleAngle="30" // 小部件应该处于哪个角度（范围：0 ~ 360）
+    -->
+
+</android.support.constraint.ConstraintLayout>

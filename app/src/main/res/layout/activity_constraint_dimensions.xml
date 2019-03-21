@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp">
+
+    <!-- 可以给View设置最小和最大尺寸，这些属性只有在宽度或高度未‘wrap_content’是生效
+        android:minWidth=""
+        android:minHeight=""
+        android:maxWidth=""
+        android:maxHeight=""
+    -->
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:minHeight="30dp"
+        android:text="@string/text_str_01"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="100dp"
+        android:maxHeight="30dp"
+        android:text="@string/text_str_long"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@id/tv1"
+        app:layout_constraintLeft_toRightOf="@id/tv1"
+        app:layout_constraintTop_toTopOf="@id/tv1"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

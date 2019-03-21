@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">GitTest</string>
+    
+    <string name="text_str">文本</string>
+    <string name="text_str_01">文本1</string>
+    <string name="text_str_02">文本2</string>
+    <string name="text_str_long">文本超长文本文本超长文本文本超长文本文本超长文本文本超长文本</string>
+    <string name="btn_str_01">按钮1</string>
+    <string name="btn_str_02">按钮2</string>
+    <string name="btn_str_03">按钮3</string>
 </resources>

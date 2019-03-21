@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/bnt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="按钮1"
-        tools:ignore="MissingConstraints" />
+    <!--
+        app:layout_constraintWidth_percent=""
+        app:layout_constraintHeight_percent=""
+    1.必须和‘MATCH_CONSTRAINT’一起使用（即0dp）
+    2.属性取值为 0 ~ 1之间，表示占父View的百分比
+    -->
 
     <Button
-        android:id="@+id/btn2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="按钮2"
-        app:layout_constraintLeft_toRightOf="@id/bnt1"
+        android:text="@string/btn_str_01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.3"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

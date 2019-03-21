@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="tv_name, tv_contact"
+        tools:ignore="MissingConstraints" />
+
+        可以用来约束多个View
+        两个属性：
+        1.‘app:barrierDirection=""’，取值有{top, bottom, left, right, start, end}
+            用于控制Barrier相对于给定的View的位置。
+        2.‘app:constraint_referenced_ids="tv_name, tv_contact"’
+            取值是要依赖的控件（不需要包括{@+id/}），Barrier将会使用ids中最大的一个的宽（高）作为自己的位置。
+    -->
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名："
+        app:layout_constraintBottom_toBottomOf="@id/et_name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="联系方式："
+        app:layout_constraintBottom_toBottomOf="@id/et_contact"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@null"
+        android:text="张三"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/barrier2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:text="136****2352"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="tv_name, tv_contact"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
