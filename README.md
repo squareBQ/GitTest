@@ -5,7 +5,7 @@ about git use and test
 <summary>expand</summary>
 <pre>
 Record：
- - Github Markdown Support Emoji [click here for more detail](https://www.webfx.com/tools/emoji-cheat-sheet/)
- - Git Push Fails - fatal: The remote end hung up unexpectedly [click](https://confluence.atlassian.com/bitbucketserverkb/git-push-fails-fatal-the-remote-end-hung-up-unexpectedly-779171796.html)
+ * <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">Github Markdown Support Emoji</a>
+ * Git Push Fails - fatal: <a href="https://confluence.atlassian.com/bitbucketserverkb/git-push-fails-fatal-the-remote-end-hung-up-unexpectedly-779171796.html">The remote end hung up unexpectedly</a>
 </pre>
 </details>  
