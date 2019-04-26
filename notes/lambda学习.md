@@ -20,7 +20,7 @@ x -> 2 * x
 // 接收2个参数(数字)，返回表达式运算的结果
 (x, y) -> x + y
 
-// 多个语句要永达括号包裹，并且返回值要用return指明
+// 多个语句要用大括号包裹，并且返回值要用return指明
 (x, y) -> {
 	int result = x + y;
 	System.out.print(result);
@@ -102,7 +102,7 @@ private static void printPerson(Person p, IPersonPrinter printer) {
     }
 ```
 
-接下来在main函数中调用第三部的方法，先来看看不实用Lambda的方式：
+接下来在main函数中调用第三步的方法，先来看看不使用Lambda的方式：
 
 ```
 printPerson(person, new IPersonPrinter() {
@@ -113,7 +113,7 @@ printPerson(person, new IPersonPrinter() {
  });
 ```
 
-很简单的操作缺需要这么多行代码，只有一行代码是有用的。而使用Lambda表达式之后，只需要一行代码：
+很简单的操作却需要这么多行代码，只有一行代码是有用的。而使用Lambda表达式之后，只需要一行代码：
 
 ```
 printPerson(person, p -> System.out.print(p.toString()));

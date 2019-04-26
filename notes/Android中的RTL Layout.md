@@ -10,7 +10,7 @@
  1. 在`AndroidManifest.xml`文件中将`application`标签的`android:supportsRtl`属性值设置为`true`
  2. 将响应标签的`android:layoutDirection`属性设置为`rtl`
 
-![](imgs/rtl_01.png)
+![](../imgs/rtl_01.png)
 
 布局样式：
 
@@ -60,4 +60,4 @@
 
 实际效果：
 
-![](/imgs/rtl_02.png)
+![](../imgs/rtl_02.png)

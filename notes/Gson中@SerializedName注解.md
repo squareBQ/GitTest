@@ -3,7 +3,7 @@
 ### @SerializedName注解
 使用Gson解析json成对象时默认是将json里对应字段的值解析到java对象里对应字段的属性里面。
 
-```java
+```
 场景：我们自己定义的java对象里的属性名跟json里的字段名不一样，这种情况如何处理。
 解决：使用@SerializedName注解来将对象里的属性跟json里字段对应值匹配起来。@SerializedName注解最大的作用就是属性重命名。
 ```
@@ -14,7 +14,7 @@
 > 
 > __注：alternate需要2.4以上版本__
 
-```java
+```
 @SerializedName("user_name")
 String userName;
 

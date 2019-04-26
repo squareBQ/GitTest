@@ -1,4 +1,3 @@
-![MacDown logo](http://goo.gl/5HBRdm)
 # Hello, I'm MacDown
 
 ##### I think we are going to be friends.
@@ -56,15 +55,7 @@ Header 2
 
 带有标题的链接，标题是可以改变的 `[百度首页](http://www.baidu.com/)` [百度首页](http://www.baidu.com/)  
 
-#### 索引超链: Reference方式  
-[百度][1]  
-[谷歌][2]  
-![Github logo][3]  
-[1]:http://www.baidu.com/  
-[2]:http://www.google.cn/  
-[3]:http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png "github logo"
-
-### 插入图片  
+### 插入图片
 插入图片只需要`[站外图片上传中......(3)]`,插入图片和插入链接的语法相似，插入图片时前面多了一个`!`。  
 
 	例如：![macdown Screenshot](http://upload-images.jianshu.io/upload_images/979175-5b32f52384271f2d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -255,8 +246,8 @@ A^T_S = B
 &emsp;//全角空格（中文）
 ```
 
-> &emsp;&emsp;一语未了，只听后院中有人笑声，说：“我来迟了，不曾迎接远客！”  
+> &emsp;&emsp;“父母在，不远游。”真正做到的又有几人！  
 
 ---
 
-#### <font color="#ff0000">当然，最终境界永远都是笔下是语法，心中格式化 ：）</font>  
+#### 当然，最终境界永远都是笔下是语法，心中格式化 ：）
