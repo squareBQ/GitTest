@@ -9,6 +9,7 @@
         android:id="@+id/bnt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="button1"
         android:text="按钮1"
         tools:ignore="MissingConstraints" />
 
@@ -16,8 +17,32 @@
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="button2"
         android:text="按钮2"
         app:layout_constraintLeft_toRightOf="@id/bnt1"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.github.zahileoo.widget.signview.SignCalendarView
+        android:id="@+id/scv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/et"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
