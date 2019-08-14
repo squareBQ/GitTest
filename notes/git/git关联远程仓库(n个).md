@@ -60,3 +60,19 @@ git fetch agent
 ```
 
 ![git常用命令速查表](https://7n.w3cschool.cn/attachments/image/20170206/1486348362884912.jpg)
+
+> 如何将本地仓库上传到远程仓库?
+
+默认你的本地仓库已经创建完毕。
+
+* 将本地仓库关联到远程仓库
+
+```
+git remote add origin url_of_your_remote_repository
+```
+
+* 将本地代码push到远程仓库
+
+```
+git push -u origin master
+```
