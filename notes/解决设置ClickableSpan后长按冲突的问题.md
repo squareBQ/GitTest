@@ -1,7 +1,7 @@
 # 解决设置ClickableSpan后长按冲突的问题
 
 #### 问题描述
-3月份修改别人代码的时候想要屏蔽TextView的长按事件，发现TextView有重写OnTouchEvent方法，然后在其中加了长按事件的判断，是长按事件则不做任何处理。结果测试发现并没有得到想要的效果，所以继续查看代码，最终发现，代码里对TextView设置了setSpan(new ClickableSpan)，导致长按事件无法被我们捕捉到。
+代码里对TextView设置了setSpan(new ClickableSpan)，导致长按事件与click span冲突；
 
 #### 分析
 因为查看代码是因为添加了setSpan(new ClickableSpan)方法导致长按无法被检测到，所以主要是分析ClickableSpan来寻找解决方法。
